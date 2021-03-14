@@ -6,7 +6,9 @@ const router = express.Router();
 
 router.get("/", (req,res) => res.status(200).json({api: "online"}));
 
-router.get("/clients", controller.listarClients);
+router.get("/client", controller.listarClients);
+
+router.get("/client/:id", controller.listarClient);
 
 router.post("/client", controller.criarClient);
 
