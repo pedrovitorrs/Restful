@@ -1,6 +1,7 @@
 module.exports = {
     dialect: 'postgres', 
-    host: '172.19.0.2',
+    host: "localhost",
+    port: 15432,
     username: 'postgres',
     password: 'postgres',
     database: 'sqlnode',
